@@ -8,7 +8,7 @@ spring:  application:    name: gez-eureka
 #服务注册与发现(配置集群时指向除了本身之外的Eureka服务端注册地址)
 eureka:
   client:    serviceUrl:
-       defaultZone: http://localhost:8002/eureka
+       defaultZone: http://localhost:8001/eureka
             #当不配置集群的时候打开下面的配置
             #不将自己注册到eureka
     register-with-eureka: false #表示是否注册自身到eureka服务器， 做集群是设置成true 生产配置为true
